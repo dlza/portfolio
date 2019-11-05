@@ -1,0 +1,158 @@
+// Global styles
+
+html{
+    font-family: Helvetica, sans-serif;
+}
+
+main{
+    padding:5%;
+    max-width:1260px;
+}
+
+img{
+    width:100%;
+}
+
+// Case study
+
+.case-study-heading{
+    margin-bottom:5rem;
+}
+
+.case-study-content{
+    img{
+        margin-bottom:3rem;
+    }
+}
+
+// Back button
+
+.back-button{
+    margin-bottom:5rem;
+    display:block;
+    svg{
+        margin-right:1rem;
+    }
+}
+
+// Type
+
+    // Resets
+    h1,h2,h3,h4,h5,h6,p{
+        margin-top:0;
+        margin-bottom:0;
+        font-weight:normal;
+    }
+
+    // Type styles
+
+    h1{
+        font-size:1.5rem;
+        margin-bottom:2rem;
+    }
+
+    h2{
+        font-size:1.5rem;
+        margin-bottom:2rem;
+    }
+
+    p{
+        line-height:1.5;
+        margin-bottom:1.5rem;
+    }
+
+// Home Grid
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "info"
+      "projects";
+    grid-gap: 20px;
+}
+
+    .grid-heading{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .info{
+        a{
+            &:not(:last-child){
+                margin-right:1rem;
+            }
+        }
+    }
+
+    // Projects
+
+    .projects {
+        .projects-grid{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: 
+            "project";
+            grid-gap: 20px;
+        }
+        .project{
+            .image{
+                background:#333;
+                margin-bottom:1rem;    
+                padding-top:75%;          
+                position: relative;  
+                .project-image{
+                    position: absolute;
+                    top:0;
+                    left:0;
+                    right:0;
+                    bottom:0;
+                    display:flex;
+                    img{
+                        max-width:150px;
+                        margin:auto;
+                    }
+                }
+            }
+
+            .project-heading{
+                display:flex;
+                .title{
+                    margin-right:1rem;
+                }
+            }
+
+        }
+    }
+
+// From tablet    
+@media (min-width: 768px){
+    .grid {
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 40px;
+        grid-template-areas: 
+          "info"
+          "projects";
+    }
+
+        .grid-heading{
+            grid-column-end: 3;
+        }
+    
+    .projects {
+        .projects-grid{
+            grid-gap: 40px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+            "project project";
+        }
+
+        .project{
+            .project-heading{
+                display:flex;
+            }
+        }
+    }
+}
