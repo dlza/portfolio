@@ -13,11 +13,9 @@ const IndexPage = () => (
           <div className="grid-heading">
             <h1>David Lanham</h1>
           </div>
-          <p>I’m a designer with a broad skillset spanning many different diciplines. I enjoy being deeply involved in the frontend process wherever possible and work closely with developers.
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
           <br/><br/>
-          I know HTML5, CSS3, SASS. I have experience working with MVC websites.Umbraco. Proficient with various source control tools such as git and Azure devops. I design with development and developers in mind. Reusability, modularity, consistency. 
-          <br/><br/>
-          Currently interested in gatsbyJS and React.</p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
           <Link to="/about/">Go to page 2</Link>
           <a href="#">Linked in</a>
           <a href="#">Email</a>
