@@ -7,9 +7,9 @@ import Project from "../components/project"
 import "../components/grid.scss"
 
 import ImageHHO from "../images/hho.svg"
-import ImageSHA from "../images/sha.svg"
-import ImageOMMM from "../images/ommm.svg"
-import ImageFireworkx from "../images/fireworkx.svg"
+import ImageSHA from "../images/SHA.svg"
+import ImageOMMM from "../images/OMMM.svg"
+import ImageFireworkx from "../images/Fireworkx.svg"
 
 const IndexPage = () => (
     <Layout>
