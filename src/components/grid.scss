@@ -1,0 +1,40 @@
+// Home Grid
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "info"
+      "projects";
+    grid-gap: 20px;
+}
+
+    .grid-heading{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .info{
+        a{
+            &:not(:last-child){
+                margin-right:1rem;
+            }
+        }
+    }
+
+// From tablet    
+@media (min-width: 768px){
+    .grid {
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 40px;
+        grid-template-areas: 
+          "info"
+          "projects";
+    }
+
+        .grid-heading{
+            grid-column-end: 3;
+        }
+    
+}

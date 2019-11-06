@@ -4,6 +4,12 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Project from "../components/project"
+import "../components/grid.scss"
+
+import ImageHHO from "../images/hho.svg"
+import ImageSHA from "../images/sha.svg"
+import ImageOMMM from "../images/ommm.svg"
+import ImageFireworkx from "../images/fireworkx.svg"
 
 const IndexPage = () => (
     <Layout>
@@ -22,13 +28,41 @@ const IndexPage = () => (
         </div>
         <div class="grid-item projects">
           <div className="grid-heading">
-            <h2>Recent Work</h2>
+            <p>Recent Work</p>
           </div>
           <div class="projects-grid">
-            <Project />
-            <Project />
-            <Project />
-            <Project />
+            <Project 
+              ProjectID={"hho"}
+              ProjectImage={ImageHHO}
+              ProjectTitle={"HHO Website"}
+              ProjectDate={"Q4 2019"}
+              ProjectAltText={"HHO Website"}
+              ProjectLink={"/hho/"}
+            />
+            <Project 
+              ProjectID={"sha"}
+              ProjectImage={ImageSHA}
+              ProjectTitle={"SHA Website"}
+              ProjectDate={"Q4 2019"}
+              ProjectAltText={"SHA Website"}
+              ProjectLink={"/sha/"}
+            />
+            <Project 
+              ProjectID={"fireworkx"}
+              ProjectImage={ImageFireworkx}
+              ProjectTitle={"Fireworkx Website"}
+              ProjectDate={"Q4 2019"}
+              ProjectAltText={"Fireworkx Website"}
+              ProjectLink={"/fireworkx/"}
+            />
+            <Project 
+              ProjectID={"ommm"}
+              ProjectImage={ImageOMMM}
+              ProjectTitle={"Old Mutual Multimanagers Website"}
+              ProjectDate={"Q4 2018"}
+              ProjectAltText={"Old Mutual Multimanagers Website"}
+              ProjectLink={"/ommm/"}
+            />
           </div>               
         </div>
       </div>

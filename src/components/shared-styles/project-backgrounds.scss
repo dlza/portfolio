@@ -1,0 +1,29 @@
+// Project backgrounds
+
+$background-hho:#333D47;
+$background-sha:#223551;
+$background-ommm:linear-gradient(to right, #009677 0%, #50B848 100%);
+$background-fireworkx:#002b64;
+
+.project{
+    &#hho{
+        .image{
+            background-color:$background-hho;
+        }
+    }
+    &#sha{
+        .image{
+            background-color:$background-sha;
+        }
+    }
+    &#ommm{
+        .image{
+            background-image:$background-ommm;
+        }
+    }
+    &#fireworkx{
+        .image{
+            background-color:$background-fireworkx;
+        }
+    }
+}

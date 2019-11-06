@@ -1,23 +1,19 @@
 import React from "react"
 import { Link } from "gatsby"
+import "../components/project.scss"
 
-import HHOImage from '../images/hho.svg'
-
-const Project = () => {
-    return <div class="project">
-        
-        <Link to="/hho/">
+export default props => (
+    <div class="project" id={props.ProjectID}>
+        <Link to={props.ProjectLink}>
             <div class="image" >
                 <div class="project-image">
-                    <img src={HHOImage} alt="" />
+                    <img src={props.ProjectImage} alt={props.ProjectAltText} />
                 </div>
             </div>
         </Link>
         <div class="project-heading">
-            <Link to="/hho/" class="title">HHO Website</Link>
-            <span class="date">Q4 2019</span>
+            <Link to={props.ProjectLink} class="title">{props.ProjectTitle}</Link>
+            <span class="date">{props.ProjectDate}</span>
         </div>
     </div>
-}
-
-export default Project
+)

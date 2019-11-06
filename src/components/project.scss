@@ -1,0 +1,55 @@
+// Projects grid
+
+.projects {
+    .projects-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "project";
+        grid-gap: 20px;
+    }
+}
+
+// Project
+
+.project{
+    .image{
+        background:#333;
+        margin-bottom:1rem;    
+        padding-top:75%;          
+        position: relative;  
+        .project-image{
+            position: absolute;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            display:flex;
+            img{
+                max-width:150px;
+                margin:auto;
+            }
+        }
+    }
+    .project-heading{
+        .title{
+            display:block;
+            margin-bottom:0.5rem;
+        }
+    }
+}
+
+
+// From tablet    
+@media (min-width: 768px){
+    .projects {
+        .projects-grid{
+            grid-gap: 40px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+            "project project";
+        }
+    }
+    
+}
